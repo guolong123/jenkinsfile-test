@@ -38,7 +38,8 @@ value
                         }
                     }
                     steps{
-                      sh label: 'echo env', script: "echo ${env.ENV1}---${env.ENV2}"
+                      sh label: 'echo env', script: "echo ${env.ENV1}"
+                      sh label: 'echo env', script: "echo ${env.ENV2}"
                       
                     }
                 }
