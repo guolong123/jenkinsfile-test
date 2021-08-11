@@ -54,7 +54,7 @@ value
                       sh label: 'echo parameters', script: "echo ${bool}"
                       sh label: 'echo parameters', script: "echo ${choice}"
                       sh label: 'echo parameters', script: "echo ${credential}"
-                      sh label: 'echo parameters', script: "echo ${file}"
+                      //sh label: 'echo parameters', script: "echo ${file}"
                       sh label: 'echo parameters', script: "echo ${password}"
                       sh label: 'echo parameters', script: "echo ${run}"
                       sh label: 'echo parameters', script: "echo ${string}"
