@@ -12,7 +12,7 @@ pipeline {
         booleanParam defaultValue: true, description: 'bool parameters', name: 'bool'
         choice choices: ['a', 'b', 'c'], description: 'choice parameters', name: 'choice'
         credentials credentialType: 'com.cloudbees.plugins.credentials.common.StandardCredentials', defaultValue: '6e537068-2b11-41d8-87ad-0f4ffde6b763', name: 'credential', required: false
-        file description: 'file parameters', name: ''
+        file description: 'file parameters', name: 'file'
         password defaultValue: '123456', description: 'password parameters', name: 'password'
         run description: 'run parameters', filter: 'ALL', name: 'run', projectName: 'phoenix-build'
         string defaultValue: 'default value', description: 'string parameters', name: 'string'
@@ -50,7 +50,15 @@ value
                         }
                     }
                     steps{
-                      sh label: 'echo parameters', script: "echo ${bool}, ${choice}"
+                      sh label: 'echo parameters', script: "echo ${bool}"
+                      sh label: 'echo parameters', script: "echo ${choice}"
+                      sh label: 'echo parameters', script: "echo ${credential}"
+                      sh label: 'echo parameters', script: "echo ${file}"
+                      sh label: 'echo parameters', script: "echo ${password}"
+                      sh label: 'echo parameters', script: "echo ${run}"
+                      sh label: 'echo parameters', script: "echo ${string}"
+                      sh label: 'echo parameters', script: "echo ${text}"
+
                     }
                 }
             }
