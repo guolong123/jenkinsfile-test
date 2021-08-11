@@ -58,7 +58,7 @@ value
                       sh label: 'echo parameters', script: "echo ${password}"
                       //sh label: 'echo parameters', script: "echo ${run}"
                       sh label: 'echo parameters', script: "echo ${string}"
-                      sh label: 'echo parameters', script: "print ${text}"
+                      sh label: 'echo parameters', script: "echo \"${text}\""
 
                     }
                 }
