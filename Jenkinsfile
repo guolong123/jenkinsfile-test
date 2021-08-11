@@ -50,7 +50,7 @@ value
                         }
                     }
                     steps{
-                      sh label: 'echo parameters', script: "echo ${env.bool}, ${env.choice}"
+                      sh label: 'echo parameters', script: "echo ${bool}, ${choice}"
                     }
                 }
             }
