@@ -9,7 +9,6 @@ pipeline {
     }
 
     parameters {
-        parameters {
         booleanParam defaultValue: true, description: 'bool parameters', name: 'bool'
         choice choices: ['a', 'b', 'c'], description: 'choice parameters', name: 'choice'
         credentials credentialType: 'com.cloudbees.plugins.credentials.common.StandardCredentials', defaultValue: '6e537068-2b11-41d8-87ad-0f4ffde6b763', name: 'credential', required: false
@@ -20,7 +19,6 @@ pipeline {
         text defaultValue: '''default 
 value
 ...''', description: 'text parameters', name: 'text'
-}
 
     }
 
